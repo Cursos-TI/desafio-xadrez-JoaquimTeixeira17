@@ -8,14 +8,51 @@ int main() {
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
+     printf("Desafio Jogo de Xadrex\n");
+
+
+     const int BISPO_PASSOS = 5;    // Movimentos reais do jogo
+     const int TORRE_PASSOS = 5;
+     const int RAINHA_PASSOS = 8;
+
+     int i; // Contador
+
+     printf("=== Movimentos Eficazes das Pecas ===\n\n");
+
+
     // Implementação de Movimentação do Bispo
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+
+    printf("Bispo (Diagonal Superior Direita - %d casas):\n", BISPO_PASSOS);
+     for (i = 1; i <= BISPO_PASSOS; i++) {
+        printf("Cima\n");
+        printf("Direita\n");
+     }
+     printf("\n");
 
     // Implementação de Movimentação da Torre
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
 
+    printf("Torre (Direita - %d casas):\n", TORRE_PASSOS);
+     i = 1;
+     while (i <= TORRE_PASSOS) {
+        printf("Direita\n");
+        i++;
+     }
+       printf("\n");
+
+
     // Implementação de Movimentação da Rainha
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+
+    printf("Rainha (Esquerda - %d casas):\n", RAINHA_PASSOS);
+     i = 1;
+     do {
+        printf("Esquerda\n");
+        i++;
+     } while (i <= RAINHA_PASSOS);
+
+     printf("\n=== Fim da Simulacao ===\n");
 
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
