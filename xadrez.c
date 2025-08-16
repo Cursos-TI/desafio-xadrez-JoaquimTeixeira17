@@ -13,7 +13,7 @@ int main() {
 
      const int BISPO_PASSOS = 5;    // Movimentos reais do jogo
      const int TORRE_PASSOS = 5;
-     const int RAINHA_PASSOS = 8;
+     const int RAINHA_PASSOS = 4;
 
      int i; // Contador
 
