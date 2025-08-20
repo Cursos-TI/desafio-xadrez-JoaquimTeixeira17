@@ -14,8 +14,10 @@ int main() {
      const int BISPO_PASSOS = 5;    // Movimentos reais do jogo
      const int TORRE_PASSOS = 5;
      const int RAINHA_PASSOS = 4;
+     const int movimentoCompleto = 1; 
 
-     int i; // Contador
+     int i;
+     int j; // Contador
 
      printf("=== Movimentos Eficazes das Pecas ===\n\n");
 
@@ -52,11 +54,26 @@ int main() {
         i++;
      } while (i <= RAINHA_PASSOS);
 
-     printf("\n=== Fim da Simulacao ===\n");
+     printf("\n");
 
+     
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
+
+    printf("Cavalo Movimento em L:\n");
+
+    
+      for (i = 0; i < 2; i++)
+      {
+         printf("Cima\n");
+      } for (j = 0; j < 1; j++)
+      {
+         printf("Direita\n");
+      }
+            
+      
+    printf("\n=== Fim da Simulacao ===\n");
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
